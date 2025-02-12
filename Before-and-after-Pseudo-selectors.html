@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+      }
+      header::before{
+        background: url("https://plus.unsplash.com/premium_photo-1675359772567-c09110eb33be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60")
+        no-repeat center center/cover;
+
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+
+      }
+
+      .navigation {
+        font-size: 20px;
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 20px 20px;
+      }
+      section {
+        height: 440px;
+        align-items: center;
+        /* border: 4px solid red; */
+        margin: 3px 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      /* section::after{
+            content: "This is a content";
+        } */
+      /* section::before{
+            content: "This is a content";
+        } */
+      h3 {
+        font-size: 4rem;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Service</li>
+          <li class="item">Contact us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Welcome to Coding World</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta
+        culpa autem corrupti optio cum vitae aut! Quidem maiores qui tenetur
+        ipsam fugiat harum eveniet modi. Laboriosam molestiae quam vel dolorum
+        deleniti aperiam modi.
+      </p>
+    </section>
+  </body>
+</html>

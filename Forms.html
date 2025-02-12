@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="backened.php">
+        <div>
+           <label for="name">Name: </label> <input type="text" name="my Name" id="name">
+        </div>
+        <br>
+        <div>
+           <label for="role">Role: </label> <input type="text" name="my Role" id="role">
+        </div>
+        <br>
+        <div>
+           <label for="email">Email: </label> <input type="email" name="my Email" id="email"> 
+        </div>
+        <br>
+        <div>
+            <label for="date">Date: </label><input type="date" name="my Date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus: </label><input type="number" name="my Bonus" id="bonus">
+            <label for="bonus">Bonus: </label><input type="number">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility">Are you eligible? </label><input type="checkbox" name="my Eligibility" id="eligibility">
+        </div>
+        <br>
+        <div>
+            Gender: <label for="male">Male </label><input type="radio" name="my Gender" id="male" checked> <label for="female">Female </label> <input type="radio" name="my Gender" id="female">
+            <label for="others">Others </label> <input type="radio" name="my Gender" id="others">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="my Text" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+            <option value="innova">INNOVA</option>
+            <option value="swift">SWIFT</option>
+            <option value="nexon"Selected>NEXON</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <input type="Submit" value="Submit now">
+            <input type="Reset" value="Reset now">
+        </div>
+
+    </form>
+</body>
+</html>

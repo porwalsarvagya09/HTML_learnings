@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders and Background</title>
+    <style>
+        #firstpara{
+            background-color: bisque;
+            height: 200px;
+            width: 500px;
+            border: 10px double crimson;
+            /* border-width: 10px; */
+            /* border-color: crimson;
+            border-style: double; */
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 500px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 40px;
+            border-top: 10px solid darkred;
+            border-bottom: 10px solid rgb(12, 0, 0);
+            border-right: 10px solid rgb(2, 86, 52);
+            border-left: 10px solid rgb(36, 4, 178);
+        }
+        #thirdpara{
+             color: rgb(249, 252, 255);
+             border: 10px double rgb(241, 6, 2);
+             border-radius: 5px;
+             height: 400px;
+             width: 600px;
+             background-image: url('https://images.unsplash.com/photo-1685370851243-4b61da3b6015?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+             background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x-axis and y-axis*/
+             background-position: center center;
+             /* background-position: center top; */
+             /* background-position: center left; */
+             /* background-position: center right; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara">This is a paragraph</p>
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is my second paragraph</p>
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+</html>
